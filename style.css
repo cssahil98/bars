@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #020208;
+}
+body{
+    line-height: 1.5;
+}
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.product-content{
+    padding: 1rem;
+}
+
+.product-title{
+    font-size: 2 rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #e7e5df;
+    margin: 1rem 0;
+}
+
+.product-rating{
+    color: #fcad05;
+}
+
+.product-rating span{
+    font-weight: 600;
+    color: #ffefef;
+}
+
+.product-price{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    border-radius: .5rem;
+}
+
+.purchase-info input,
+.purchase-info .subscribe{
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 15px;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    width: 700;
+    margin-right: 0.2rem;
+    margin-bottom: 4rem;
+}
+
+.purchase-info input,
+.purchase-info .cart{
+    border: 1.5px solid #ddd;
+    border-radius: 25px; 
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    width: 700;
+    margin-right: 0.2rem;
+    margin-bottom: 4rem;
+}
+
+
+.purchase-info .subscribe{
+    cursor: pointer;
+    color: #fff;
+}
+.purchase-info .cart:first-of-type{
+    background: #fcad05;
+    color: #ddd;
+}
+.purchase-info .subscribe:last-of-type{
+    background: #fcad05;
+    position: relative;
+    left: 150px;
+    bottom: 100px;
+}
+.purchase-info .btn:hover{
+    opacity: 0.9;
+}
+
+#box1{
+    font-size:0.7rem;
+    padding:1rem 4%;
+    margin: 2rem 0;
+    margin-right: 5px;
+    border-radius: .5rem;
+    background-color: #fcad05;
+    border-radius: .5rem;
+    color: #fffefd;
+    border: ridge;
+    width: 700;
+    padding-top: 5px;
+    padding-left: 100px;
+}
+
+#box2{
+    font-size:0.7rem;
+    padding:1rem 4%;
+    margin: 0.1rem; 
+    border-radius: .5rem;
+    border-width: thin;
+    background-color: #fcad05;
+    border-spacing: 15px;
+    color: #fffdf9;
+    font-weight: 500;
+    border: ridge;
+    width: 700;
+    padding-top: 5px;
+    padding-left: 100px;
+}
+
+#button:hover{
+    background-color: #fcad05;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 992px){
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5.5rem;
+        float: center;
+    }
+    .card-wrapper{
+        height: 120vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 200;
+    }
+}
+
+
+
+
+.slider{
+	max-width: 700px;
+	border:5px solid  #29a8e2;
+	margin:80px auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.slider .left-slide,.slider .right-slide{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #444444;
+  border-radius: 50%;
+  color:#ffffff;
+  font-size: 20px;
+  top:50%;
+  cursor: pointer;
+  margin-top: -20px;
+  text-align: center;
+  line-height: 40px;
+  
+}
+.slider .left-slide:hover,.slider .right-slide:hover{
+ box-shadow: 0px 0px 10px black;
+ background-color: #29a8e2;
+}
+
+.slider .left-slide{
+	left: 30px;
+}
+.slider .right-slide{
+	right: 30px;
+}
+.slider .slider-items .item img{
+	max-width: 100%;
+	display: block;
+	animation:zoom 1s ease;
+}
+
+@keyframes zoom{
+	0%{transform: scale(2);opacity: 0}
+	50%{transform: scale(2);}
+	100%{transform: scale(1);opacity:1}
+}
+.slider .slider-items .item{
+	display: none;
+	position: relative;
+}
+
+.slider .slider-items .item .caption{
+position: absolute;
+width: 100%;
+height: 60px;
+bottom: 0px;
+left: 0px;
+background-color: rgba(0,0,0,.5);
+line-height: 60px;
+text-align: center;
+color: #ffffff;
+font-size: 30px;
+
+}
+
+.slider .slider-items .item.active{
+	display: block;
+}
+
+
+
+
+
+
